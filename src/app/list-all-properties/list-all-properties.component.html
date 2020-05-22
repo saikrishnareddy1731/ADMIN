@@ -1,0 +1,31 @@
+
+<div class="container">
+
+
+  <table class="table table-hover mat-elevation-z8" style="margin: 5px; " border="1">
+    <thead>
+    <tr>
+      <th id="id"> Id</th>
+      <th id="name">  Name</th>
+      <th id="description">Description</th>
+      <th id="address">Address</th>
+      <th id="price">Price</th>
+      <th id="delete">Delete</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let item of properties | async">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.description}}</td>
+      <td>{{item.address}}</td>
+      <td>{{item.price}}</td>
+
+      <td><button type="button" (click)="deleteProperty(item.id)" color="warn">DELETE</button>
+      </td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>

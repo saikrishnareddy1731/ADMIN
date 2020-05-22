@@ -1,0 +1,34 @@
+
+<div class="container">
+
+
+  <table class="table table-hover mat-elevation-z8" style="margin: 5px; " border="1">
+    <thead>
+    <tr>
+
+      <th id="name">Name</th>
+      <th id="username">UserName</th>
+      <th id="contactNumber">Contact Number</th>
+      <th id="delete">Delete</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let item of customers | async">
+
+      <td>{{item.name}}</td>
+      <td>{{item.username}}</td>
+      <td>{{item.contactNumber}}</td>
+      <td>
+
+      </td>
+      <td><button type="button" (click)="deleteCust(item.username)" color="warn">DELETE
+
+      </button>
+      </td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+

@@ -1,0 +1,42 @@
+
+<div class="container">
+
+
+  <table class="table table-hover mat-elevation-z8" style="margin: 5px; " border="1">
+    <thead>
+    <tr>
+      <th id="name"> Name</th>
+      <th id="email"> Email</th>
+      <th id="gender"> Gender</th>
+      <th id="city">City</th>
+      <th id="state">State</th>
+      <th id="contactNumber">Contact Number</th>
+      <th id="address">Address</th>
+      <th id="pincode">Pincode</th>
+      <th id="imageurl">Image Url</th>
+
+
+      <th id="delete">Delete</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let item of users | async">
+      <td>{{item.name}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.gender}}</td>
+      <td>{{item.city}}</td>
+      <td>{{item.state}}</td>
+      <td>{{item.contactNumber}}</td>
+      <td>{{item.address}}</td>
+      <td>{{item.pincode}}</td>
+      <td>{{item.imageUrl}}</td>
+
+
+      <td><button type="button" (click)="deleteUser(item.email)" color="warn">DELETE</button>
+      </td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
