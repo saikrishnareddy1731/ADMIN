@@ -1,0 +1,39 @@
+* {
+  font-family: ubuntu;
+}
+
+.navbar.navbar-dark.navbar-expand-md {
+  background-color: transparent;
+  padding: 20px;
+  border-bottom: 0.5px solid #00B0FF;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.nav-link:hover {
+  color: #00B0FF !important;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  color: #fff !important;
+  background-color: #00B0FF;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+  background-color: #00B0FF;
+}
+
+.btn-mycolor {
+  background-color: #00B0FF;
+  color: #fff;
+}
+
+.btn-mycolor:hover {
+  background-color: rgb(17, 158, 223);
+  color: #fff;
+}

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TuCaurtoAdminService"
+    }
+  },
+  "defaultProject": "TuCaurtoAdminService",
+  "cli": {
+    "analytics": "86349b72-242e-4aa0-ad61-1df49ac45cd8"
+  }
 }
